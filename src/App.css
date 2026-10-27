@@ -1,0 +1,32 @@
+/* AURELIA GRAND — App Specific Styles & Micro-Animations */
+
+.aurelia-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--color-ivory);
+}
+
+/* Subtle Smooth Scroll Anchor Offset */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* Print Styling for the Reservation Voucher */
+@media print {
+  header, footer, #ambiance-audio-toggle, .modal-close-btn, button {
+    display: none !important;
+  }
+  body, .modal-backdrop, .modal-content {
+    background: white !important;
+    color: black !important;
+    position: static !important;
+    padding: 0 !important;
+  }
+  .modal-content {
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+  }
+}
